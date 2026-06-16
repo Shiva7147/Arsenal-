@@ -1,0 +1,220 @@
+{
+  "membersCount": "500+ Gunners Strong",
+  "screenings": {
+    "featured": {
+      "id": "featured-1",
+      "competition": "Premier League",
+      "homeTeam": "ARSENAL",
+      "awayTeam": "CHELSEA",
+      "date": "Saturday, 25 Oct at 10:00 PM IST",
+      "venue": "Church Street Social, Bengaluru",
+      "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
+      "instaLink": "https://www.instagram.com/ascbengaluru",
+      "posterUrl": "images/gallery_screening.png"
+    },
+    "list": [
+      {
+        "id": "scr-1",
+        "competition": "Premier League",
+        "homeTeam": "ARSENAL",
+        "awayTeam": "CHELSEA",
+        "date": "Saturday, 25 Oct at 10:00 PM IST",
+        "venue": "Church Street Social, Bengaluru",
+        "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
+        "instaLink": "https://www.instagram.com/ascbengaluru",
+        "posterUrl": "images/gallery_screening.png"
+      },
+      {
+        "id": "scr-2",
+        "competition": "North London Derby",
+        "homeTeam": "TOTTENHAM",
+        "awayTeam": "ARSENAL",
+        "date": "Sunday, 09 Nov at 8:00 PM IST",
+        "venue": "Doffpub, Indiranagar, Bengaluru",
+        "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
+        "instaLink": "https://www.instagram.com/ascbengaluru",
+        "posterUrl": "images/gallery_fans3.png"
+      }
+    ]
+  },
+  "announcements": [
+    {
+      "id": 1,
+      "badge": "Pinned",
+      "title": "2026/27 Official Memberships Open!",
+      "description": "Join the Arsenal Supporters Club Bengaluru for the upcoming season. Members get exclusive access to screenings, priority RSVP, official matchday kit discounts, and entry to member-only turf sessions.",
+      "link": "https://forms.gle/ascb-membership-placeholder"
+    },
+    {
+      "id": 2,
+      "badge": "Screening",
+      "title": "Chelsea Screening Tickets Live",
+      "description": "The Gunners face Chelsea at Church Street Social. Due to high demand, RSVP is mandatory. Cover charges apply at the venue entry. RSVP today to secure your entry!",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "badge": "Turf Games",
+      "title": "Sunday Morning Turf Kickabout",
+      "description": "Register for the weekly Gunners Turf session at Astro Arena, HSR Layout. Open to all members. Casual play, mixed skill levels. Slots are limited to 14 players.",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "badge": "Merchandise",
+      "title": "ASCB Official Scarf & Tee Pre-order",
+      "description": "Pre-order the new ASCB Bengaluru Gunners members scarf and red-white tee. Show your colors on matchdays. Shipping starts next week.",
+      "link": "#"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "imageUrl": "images/gallery_screening.png",
+      "title": "Arsenal vs Man City Screening",
+      "category": "screenings"
+    },
+    {
+      "id": 2,
+      "imageUrl": "images/gallery_turf.png",
+      "title": "Weekly Turf Kickabout",
+      "category": "turf"
+    },
+    {
+      "id": 3,
+      "imageUrl": "images/gallery_fans1.png",
+      "title": "Bengaluru Gunners celebrating Saka's goal",
+      "category": "fans"
+    },
+    {
+      "id": 4,
+      "imageUrl": "images/gallery_fans2.png",
+      "title": "The Indiranagar Arsenal Family",
+      "category": "events"
+    },
+    {
+      "id": 5,
+      "imageUrl": "images/gallery_matchday.png",
+      "title": "Church Street Social Packed Red & White",
+      "category": "screenings"
+    },
+    {
+      "id": 6,
+      "imageUrl": "images/gallery_trophy.png",
+      "title": "Local Supporters Tournament Winners",
+      "category": "events"
+    },
+    {
+      "id": 7,
+      "imageUrl": "images/gallery_saka.png",
+      "title": "Starboy Celebration",
+      "category": "fans"
+    },
+    {
+      "id": 8,
+      "imageUrl": "images/gallery_odegaard.png",
+      "title": "Lifting The Trophy",
+      "category": "events"
+    },
+    {
+      "id": 9,
+      "imageUrl": "images/gallery_fans3.png",
+      "title": "High-Energy Screening Crowds",
+      "category": "screenings"
+    },
+    {
+      "id": 10,
+      "imageUrl": "images/gallery_pitch.png",
+      "title": "Matchday Pitch Details",
+      "category": "turf"
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Nikhil Kamath",
+      "role": "Club Lead & President",
+      "bio": "Guiding the ASCB vision since 2018. Lifelong Gunner, obsessed with Arsene Wenger's invincibles.",
+      "social": {
+        "instagram": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Rohan Deshmukh",
+      "role": "Screening Coordinator",
+      "bio": "Ensures every matchday screening in Bengaluru has the loudest crowd and best venue experience.",
+      "social": {
+        "instagram": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Anjali Nair",
+      "role": "Community & Socials Manager",
+      "bio": "Manages the digital home of Bengaluru Gunners. Connecting fans across the city.",
+      "social": {
+        "instagram": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Siddharth Sen",
+      "role": "Events & Turf Coordinator",
+      "bio": "Organizes weekend turf matches and friendly tournaments. Keeping the Gooners fit and active.",
+      "social": {
+        "instagram": "#",
+        "twitter": "#"
+      }
+    }
+  ],
+  "chants": [
+    {
+      "id": 1,
+      "title": "North London Forever",
+      "vibe": "Pre-Match Anthem",
+      "lyrics": "North London forever,\nWhatever the weather,\nThese streets are our own.\nAnd my heart will leave you never,\nMy blood will run Red,\nFor the club that I love,\nAnd the team that I call home."
+    },
+    {
+      "id": 2,
+      "title": "Come on You Gunners",
+      "vibe": "Matchday Mainstay",
+      "lyrics": "Come on you Gunners,\nCome on you Gunners,\nCome on you Gunners,\nCome on you Gunners!"
+    },
+    {
+      "id": 3,
+      "title": "We Love You Arsenal",
+      "vibe": "High Energy Celebration",
+      "lyrics": "We love you Arsenal, we do,\nWe love you Arsenal, we do,\nWe love you Arsenal, we do,\nOh, Arsenal we love you!"
+    },
+    {
+      "id": 4,
+      "title": "Red Army Bengaluru",
+      "vibe": "ASCB Original Vibe",
+      "lyrics": "We are the Gunners from Bengaluru,\nWe sing for Arsenal, loyal and true,\nFrom Church Street to Indiranagar, we roar,\nCome on you Gunners, go out and score!"
+    }
+  ],
+  "turfGames": [
+    {
+      "id": "turf-1",
+      "title": "Gunners Turf Matchday #42",
+      "date": "Sunday, 26 Oct",
+      "time": "7:00 AM - 9:00 AM IST",
+      "venue": "Astro Arena, HSR Layout, Bengaluru",
+      "status": "Registration Open",
+      "spots": "14 Slots Total (8 remaining)"
+    },
+    {
+      "id": "turf-2",
+      "title": "ASCB Inter-Club Friendly Tournament",
+      "date": "Saturday, 15 Nov",
+      "time": "4:00 PM - 8:00 PM IST",
+      "venue": "Kick on Turf, Kalyan Nagar, Bengaluru",
+      "status": "Upcoming",
+      "spots": "4 Teams (Registration starts Nov 1)"
+    }
+  ]
+}

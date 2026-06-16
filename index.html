@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Arsenal Supporters Club Bengaluru | Gunners Community in Bangalore</title>
+  <meta name="description" content="Join Arsenal fans in Bengaluru for match screenings, chants, turf games, community events, announcements, gallery updates, and the full Gunners matchday experience.">
+  <meta name="keywords" content="Arsenal Supporters Club Bengaluru, Arsenal Supporters Club Bangalore, Arsenal fans Bengaluru, Arsenal fans Bangalore, Arsenal screenings Bengaluru, Arsenal match screening Bangalore, Gunners Bengaluru, Arsenal community Bangalore">
+  <meta name="author" content="ASCB Developer">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arsenal Supporters Club Bengaluru | Gunners Community in Bangalore">
+  <meta property="og:description" content="Join Arsenal fans in Bengaluru for match screenings, chants, turf games, and the full Gunners matchday experience.">
+  <meta property="og:url" content="http://localhost:3000/">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Arsenal Supporters Club Bengaluru | Gunners Community in Bangalore">
+  <meta property="twitter:description" content="Join Arsenal fans in Bengaluru for match screenings, chants, turf games, and the full Gunners matchday experience.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon placeholder (SVG Inline red circle with white cannon) -->
+  <link class="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23EF0107%22/><path d=%22M30 45 h30 v10 h-30 z M60 40 l15 10 l-15 10 z%22 fill=%22%23C59B27%22/></svg>">
+</head>
+<body>
+
+  <!-- --- HEADER & NAVBAR --- -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#/home" class="logo">
+        <div class="logo-icon" style="background: none; border: none; box-shadow: none; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <img src="images/ascb_crest.png" alt="ASCB Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="logo-text">
+          ASCB
+          <span>Arsenal Supporters Club Bengaluru</span>
+        </div>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#/home" class="nav-link" data-view="home">Home</a></li>
+          
+          <li class="nav-item-dropdown">
+            <span class="nav-link-dropdown-parent">Club Info <svg class="dropdown-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg></span>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#/about" class="nav-link" data-view="about">Our Story</a></li>
+              <li><a href="#/team" class="nav-link" data-view="team">Core Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item-dropdown">
+            <span class="nav-link-dropdown-parent">Memberships <svg class="dropdown-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg></span>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#/join" class="nav-link" data-view="join">Join Club</a></li>
+              <li><a href="#/contact" class="nav-link" data-view="contact">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item-dropdown">
+            <span class="nav-link-dropdown-parent">Updates & Gallery <svg class="dropdown-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg></span>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#/announcements" class="nav-link" data-view="announcements">Announcements</a></li>
+              <li><a href="#/gallery" class="nav-link" data-view="gallery">Photo Gallery</a></li>
+              <li><a href="#/chants" class="nav-link" data-view="chants">Fan Chants</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item-dropdown">
+            <span class="nav-link-dropdown-parent">Matchday <svg class="dropdown-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg></span>
+            <ul class="nav-dropdown-menu">
+              <li><a href="#/screenings" class="nav-link" data-view="screenings">Screenings</a></li>
+              <li><a href="#/turf" class="nav-link" data-view="turf">Weekend Turf</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-list">
+      <li><a href="#/home" class="mobile-nav-link" data-view="home">Home</a></li>
+      <li class="mobile-nav-divider">Club Info</li>
+      <li><a href="#/about" class="mobile-nav-link" data-view="about">Our Story</a></li>
+      <li><a href="#/team" class="mobile-nav-link" data-view="team">Core Team</a></li>
+      <li class="mobile-nav-divider">Memberships</li>
+      <li><a href="#/join" class="mobile-nav-link" data-view="join">Join Club</a></li>
+      <li><a href="#/contact" class="mobile-nav-link" data-view="contact">Contact Us</a></li>
+      <li class="mobile-nav-divider">Updates & Gallery</li>
+      <li><a href="#/announcements" class="mobile-nav-link" data-view="announcements">Announcements</a></li>
+      <li><a href="#/gallery" class="mobile-nav-link" data-view="gallery">Photo Gallery</a></li>
+      <li><a href="#/chants" class="mobile-nav-link" data-view="chants">Fan Chants</a></li>
+      <li class="mobile-nav-divider">Matchday Activities</li>
+      <li><a href="#/screenings" class="mobile-nav-link" data-view="screenings">Match Screenings</a></li>
+      <li><a href="#/turf" class="mobile-nav-link" data-view="turf">Weekend Turf</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <p>North London Forever</p>
+      <span>Arsenal Supporters Club Bengaluru © 2026</span>
+    </div>
+  </div>
+  
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- --- MAIN VIEW CONTAINER --- -->
+  <main>
+    
+    <!-- ==================== VIEW: HOME (DECLUTTERED) ==================== -->
+    <section id="view-home" class="view-section">
+      <!-- Hero Banner with Emirates Stadium Backdrop -->
+      <div class="hero">
+        <div class="container">
+          <!-- Champions 2025/26 victory banner -->
+          <div class="champions-banner">
+            <img class="champions-banner-logo" src="images/champions_2026.png" alt="Champions Cup">
+            <span>Official Champions of the 2025/26 Season! 🏆</span>
+          </div>
+          
+          <div class="hero-grid">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Bengaluru’s Gunners. <span>We Are The Arsenal.</span>
+              </h1>
+              <p class="hero-description">
+                Experience matchdays at the Emirates atmosphere from Bengaluru. Join us for official pub screenings, weekend football turf matches, fan chants, and community activities.
+              </p>
+              <div class="hero-actions">
+                <a href="#/join" class="btn btn-primary">Join the Community</a>
+                <a href="#/screenings" class="btn btn-secondary">View Screenings</a>
+                <a href="#/gallery" class="btn btn-gold">Explore Gallery</a>
+              </div>
+              
+              <!-- Hero Embedded Instant Join Card -->
+              <div class="hero-join-card">
+                <h4 class="hero-join-card-title">Join Arsenal Supporters Club Bengaluru <span>Season 26/27</span></h4>
+                <form class="hero-join-card-form" onsubmit="event.preventDefault(); alert('Welcome to the Red Army! Check your inbox for your official onboarding kit.'); this.reset();">
+                  <input class="hero-join-card-input" type="email" placeholder="Enter your email address" required>
+                  <button type="submit" class="btn btn-primary hero-join-card-btn">Instant Register</button>
+                </form>
+              </div>
+            </div>
+            
+            <div class="hero-visual">
+              <div class="emblem-wrapper">
+                <svg class="emblem-circle" viewBox="0 0 200 200">
+                  <path id="emblemPath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none" />
+                  <text>
+                    <textPath href="#emblemPath" startOffset="0%">
+                      BENGALURU GUNNERS • NORTH LONDON FOREVER • ARSENAL • 
+                    </textPath>
+                  </text>
+                </svg>
+                <div class="emblem-center" id="emblem-interactive" style="border: none; background: none; box-shadow: none; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0;">
+                  <img src="images/ascb_crest.png" alt="ASCB Logo" style="width: 176px; height: 176px; object-fit: contain; border-radius: 50%; box-shadow: 0 8px 32px rgba(0,0,0,0.6);">
+                </div>
+                <div class="emblem-caption">GUNNERS IN BENGALURU</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Embedded About Club Section on Home Page -->
+      <div class="home-about-section">
+        <div class="container">
+          <div class="home-about-grid">
+            <div class="home-about-content">
+              <span class="section-subtitle">Bengaluru Red Army</span>
+              <h3>About the Supporters Club</h3>
+              <p>
+                Arsenal Supporters Club Bengaluru (ASCB) brings together passionate Gunners across the city to celebrate every matchday, every goal, and every unforgettable Arsenal moment. From screenings and chants to turf games and community events, this is where Bengaluru’s Arsenal family comes together.
+              </p>
+              <p>
+                Whether you remember the legendary Invincibles era or are enjoying the modern tactical masterclass of Mikel Arteta, ASCB offers an authentic matchday atmosphere that rivals the North London energy itself. We gather, we sing, we support.
+              </p>
+              <a href="#/about" class="btn btn-primary">Read Our Story</a>
+            </div>
+            <div class="home-about-stats">
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Verified Members</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Screenings Per Season</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">Turf Matchdays</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">2018</div>
+                <div class="stat-label">Year Founded</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Embedded Membership Section on Home Page -->
+      <div class="home-membership-section">
+        <div class="container">
+          <div class="home-membership-header">
+            <span class="section-subtitle">Gunners Community</span>
+            <h3 class="home-membership-title">Club Memberships</h3>
+            <p class="home-membership-desc">
+              Join the official family of Arsenal Supporters Club Bengaluru. Get access to screening bookings, members-only turf sessions, and merchandise drops.
+            </p>
+          </div>
+          <div class="home-membership-grid">
+            <div class="benefits-box">
+              <h4 class="home-membership-benefits-title">ASCB Member Benefits</h4>
+              <div class="benefits-list">
+                <div class="benefit-item">
+                  <span class="benefit-item-icon">✓</span>
+                  <div>
+                    <h5>Matchday Screenings Priority</h5>
+                    <p>Guaranteed RSVP entry and seating at our main venues.</p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-item-icon">✓</span>
+                  <div>
+                    <h5>WhatsApp Broadcast Channel</h5>
+                    <p>Immediate notifications on match schedules, cover charges, and venue updates.</p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-item-icon">✓</span>
+                  <div>
+                    <h5>Exclusive Turf Kickabouts</h5>
+                    <p>Register and play in weekly supporters turf games across Bangalore.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="home-membership-card">
+              <h4 class="membership-card-heading">Claim Your Spot</h4>
+              <h5 class="membership-card-subheading">Season 2026/27 Registration</h5>
+              <p class="membership-card-text">
+                Register your email in the Supporters Club database to unlock your official member card and get invited to the groups.
+              </p>
+              <a href="#/join" class="btn btn-primary" style="width: 100%;">View Membership Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Announcements & Gallery Preview -->
+      <div class="home-preview-section" style="background-color: rgba(255,255,255,0.015);">
+        <div class="container">
+          <div class="feature-preview-grid">
+            
+            <!-- Announcements Column -->
+            <div>
+              <div class="home-preview-header">
+                <div>
+                  <span class="section-subtitle">Announcements</span>
+                  <h3>Latest Updates</h3>
+                </div>
+                <a href="#/announcements" class="home-preview-link">
+                  All Updates 
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+              <div id="home-announcements-container" style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="color: var(--text-secondary);">Loading updates...</div>
+              </div>
+            </div>
+            
+            <!-- Gallery Preview Column -->
+            <div>
+              <div class="home-preview-header">
+                <div>
+                  <span class="section-subtitle">Gallery Sneak-peek</span>
+                  <h3>Fan Moments</h3>
+                </div>
+                <a href="#/gallery" class="home-preview-link">
+                  View Gallery 
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+              <div id="home-gallery-container" class="gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div style="color: var(--text-secondary);">Loading gallery...</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Match Screening Preview -->
+      <div class="home-preview-section">
+        <div class="container">
+          <div class="home-preview-header">
+            <div>
+              <span class="section-subtitle">Matchday Gathering</span>
+              <h3>Next Match Screening</h3>
+            </div>
+            <a href="#/screenings" class="home-preview-link">
+              View All Screenings 
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          
+          <div class="feature-preview-grid">
+            <div id="home-featured-screening">
+              <div style="text-align: center; padding: 40px; color: var(--text-secondary);">Loading screening details...</div>
+            </div>
+            
+            <!-- Side Quick Info / Join Benefit Highlight -->
+            <div class="screening-card" style="padding: 30px; justify-content: center; background-color: var(--dark-card);">
+              <h4 style="font-family: var(--font-heading); font-size: 1.4rem; text-transform: uppercase; margin-bottom: 15px;" class="text-gold">Screening Guidelines</h4>
+              <ul class="footer-link-list" style="gap: 15px; color: var(--text-secondary); font-size: 0.95rem;">
+                <li style="display: flex; gap: 10px; align-items: flex-start;">
+                  <span style="color: var(--primary-red); font-weight: 800;">✓</span>
+                  <span><strong>Mandatory RSVP:</strong> Cover slots fill up fast. Always RSVP prior to the match.</span>
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start;">
+                  <span style="color: var(--primary-red); font-weight: 800;">✓</span>
+                  <span><strong>Dress Code:</strong> Red and White! Put on your Arsenal Supporters Club Bengaluru jersey or scarf.</span>
+                </li>
+                <li style="display: flex; gap: 10px; align-items: flex-start;">
+                  <span style="color: var(--primary-red); font-weight: 800;">✓</span>
+                  <span><strong>Vibe:</strong> High energy chants throughout the 90 minutes. Respect the venue and crew.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Join Club Banner CTA -->
+      <div class="container">
+        <div class="home-join-banner">
+          <div class="home-join-content">
+            <h3>Be Part of the Red Army in Bengaluru</h3>
+            <p>Don't watch matches alone. Join the official community, attend screenings, participate in weekend football turf sessions, and stand together with hundreds of Gooners in the city.</p>
+          </div>
+          <div class="home-join-action">
+            <a href="#/join" class="btn btn-gold">Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: ABOUT ==================== -->
+    <section id="view-about" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">About the Supporters Club</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>The home of Bengaluru’s Arsenal Family</h3>
+            <p>
+              Arsenal Supporters Club Bengaluru (ASCB) brings together passionate Gunners across the city to celebrate every matchday, every goal, and every unforgettable Arsenal moment. From screenings and chants to turf games and community events, this is where Bengaluru’s Arsenal family comes together.
+            </p>
+            <p>
+              Founded by fans who wanted to replicate the high-octane atmosphere of North London and the Emirates Stadium, ASCB has grown from a handful of fans in a pub to a structured community that coordinates gatherings, tournaments, charity drives, and official supporter events.
+            </p>
+            <p>
+              Whether you are a lifelong supporter who remembers the Invincibles or a new fan experiencing the thrill of Mikel Arteta's exciting squad, you have a home with us.
+            </p>
+            <div style="margin-top: 30px;">
+              <a href="#/join" class="btn btn-primary">Join Our Rank</a>
+            </div>
+          </div>
+          
+          <div class="about-features">
+            <div class="about-feat-card">
+              <div class="about-feat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm7 3c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+              </div>
+              <h4>Match Screenings</h4>
+              <p>Experiencing matches on giant screens with roaring fans, visual chants, and complete stadium-style hype.</p>
+            </div>
+            <div class="about-feat-card">
+              <div class="about-feat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
+              <h4>Local Fan Culture</h4>
+              <p>We blend the North London energy with the rich culture of Bangalore, establishing a family of local supporters.</p>
+            </div>
+            <div class="about-feat-card">
+              <div class="about-feat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
+              <h4>Turf Activities</h4>
+              <p>Weekly amateur football games, intra-club friendly fixtures, and tournaments to keep the community active.</p>
+            </div>
+            <div class="about-feat-card">
+              <div class="about-feat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <h4>North London Spirit</h4>
+              <p>Chanting, flags, community campaigns, and charity work. We carry the values of Arsenal Football Club.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: JOIN MEMBERSHIP ==================== -->
+    <section id="view-join" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Become a member</span>
+          <h2 class="section-title">Join The Club</h2>
+        </div>
+        
+        <div class="join-layout">
+          <div class="benefits-box">
+            <h3>Why Join ASC Bengaluru?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 30px;">
+              Being part of our supporters club connects you to a network of like-minded football enthusiasts. We offer structured memberships that elevate your matchday experiences.
+            </p>
+            
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-check">✓</div>
+                <div class="benefit-text">
+                  <h4>Matchday Screenings Roster</h4>
+                  <p>Guaranteed entry and prime seating at our official screening venues (Church Street Social, Doffpub Indiranagar).</p>
+                </div>
+              </div>
+              
+              <div class="benefit-item">
+                <div class="benefit-check">✓</div>
+                <div class="benefit-text">
+                  <h4>Exclusive WhatsApp Community</h4>
+                  <p>Get immediate updates, ticketing alerts, screening RSVPs, and banter inside our verified fan group chats.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-item">
+                <div class="benefit-check">✓</div>
+                <div class="benefit-text">
+                  <h4>Turf Games & Events Access</h4>
+                  <p>Eligible to register for weekly local turf sessions, football tournaments, and member meetups.</p>
+                </div>
+              </div>
+              
+              <div class="benefit-item">
+                <div class="benefit-check">✓</div>
+                <div class="benefit-text">
+                  <h4>Official Merchandise Drops</h4>
+                  <p>Get discounts on club scarves, shirts, and custom-designed ASCB supporter memorabilia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="join-action-card">
+            <h4 class="join-card-title">Arsenal Supporters Club Bengaluru</h4>
+            <h5 class="join-card-subtitle">Season 2026/27 Register</h5>
+            <p class="join-card-desc">
+              Ready to claim your place in Bengaluru's Red Army? Register using the options below to get added to the community database.
+            </p>
+            
+            <div class="join-links">
+              <!-- WhatsApp Community CTA -->
+              <a href="#" class="btn btn-primary" style="background-color: #25D366; border-color: #25D366;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.72 13.91c-.24.69-1.23 1.26-1.71 1.31-.47.05-.93.24-3.03-.63-2.52-1.04-4.14-3.62-4.27-3.79-.12-.17-1.04-1.39-1.04-2.64 0-1.26.65-1.87.89-2.12.24-.24.52-.31.69-.31.17 0 .35.01.5.02.16.01.37-.06.57.43.21.5.71 1.73.77 1.85.06.12.1.27.02.43-.08.17-.12.27-.25.43-.13.15-.27.35-.39.47-.13.13-.26.27-.11.53.15.26.67 1.11 1.44 1.8 1 .89 1.84 1.17 2.1 1.3.26.13.41.11.56-.06.15-.17.65-.76.83-.98.17-.23.35-.19.59-.11.24.09 1.54.73 1.8.86.27.13.44.2.51.31.07.12.07.69-.17 1.38z"/></svg>
+                Join WhatsApp Community
+              </a>
+              
+              <!-- Instagram CTA -->
+              <a href="#" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                Follow on Instagram
+              </a>
+              
+              <!-- Form CTA -->
+              <a href="#" class="btn btn-gold">
+                Fill Membership Form
+              </a>
+            </div>
+            
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 25px;">
+              * No registration fees. Verification takes 24-48 hours. For urgent inquiries, contact our coordinators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: SCREENINGS ==================== -->
+    <section id="view-screenings" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Loud & Proud</span>
+          <h2 class="section-title">Match Screenings</h2>
+        </div>
+        
+        <!-- Live Countdown Timer -->
+        <div class="countdown-widget" id="countdown-widget" style="display: none; margin-bottom: 40px;">
+          <h3 class="countdown-heading">Next Match Kickoff</h3>
+          <div class="countdown-timer">
+            <div class="countdown-segment">
+              <span class="countdown-val" id="cd-days">00</span>
+              <span class="countdown-lbl">Days</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-segment">
+              <span class="countdown-val" id="cd-hours">00</span>
+              <span class="countdown-lbl">Hours</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-segment">
+              <span class="countdown-val" id="cd-mins">00</span>
+              <span class="countdown-lbl">Mins</span>
+            </div>
+            <div class="countdown-divider">:</div>
+            <div class="countdown-segment">
+              <span class="countdown-val" id="cd-secs">00</span>
+              <span class="countdown-lbl">Secs</span>
+            </div>
+          </div>
+          <div class="countdown-subtext" id="cd-match-name">Loading Next Match...</div>
+        </div>
+
+        <div id="screenings-list-container" class="screenings-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading screenings...</div>
+        </div>
+
+        <!-- Screening memories from Bangalore -->
+        <div class="screening-memories-section" style="margin-top: 80px; border-top: 1px solid var(--border-color); padding-top: 60px;">
+          <h3 class="screening-memories-title" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 900; text-transform: uppercase; text-align: center; margin-bottom: 12px;">Screening Memories</h3>
+          <p class="screening-memories-desc" style="color: var(--text-secondary); text-align: center; max-width: 600px; margin: 0 auto 40px; font-size: 1rem; line-height: 1.5;">
+            Take a look at the electric atmosphere from the Arsenal Supporters Club Bengaluru gatherings. Real fans, roaring chants, and pure football passion!
+          </p>
+          <div class="screening-memories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+            <div class="memory-card" style="border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color); background-color: var(--dark-card); transition: var(--transition-smooth);">
+              <div style="aspect-ratio: 16/10; overflow: hidden; background-color: var(--dark-bg);">
+                <img src="images/gallery_screening.png" alt="Church Street Social Screening" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);">
+              </div>
+              <div style="padding: 16px; font-family: var(--font-heading); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; color: var(--text-primary);">Church Street Social Screening</div>
+            </div>
+            <div class="memory-card" style="border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color); background-color: var(--dark-card); transition: var(--transition-smooth);">
+              <div style="aspect-ratio: 16/10; overflow: hidden; background-color: var(--dark-bg);">
+                <img src="images/gallery_fans1.png" alt="Saka Celebration Hype" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);">
+              </div>
+              <div style="padding: 16px; font-family: var(--font-heading); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; color: var(--text-primary);">Celebrating Saka's Goal</div>
+            </div>
+            <div class="memory-card" style="border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color); background-color: var(--dark-card); transition: var(--transition-smooth);">
+              <div style="aspect-ratio: 16/10; overflow: hidden; background-color: var(--dark-bg);">
+                <img src="images/gallery_fans2.png" alt="Indiranagar Doffpub Crowd" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);">
+              </div>
+              <div style="padding: 16px; font-family: var(--font-heading); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; color: var(--text-primary);">The Indiranagar Arsenal Family</div>
+            </div>
+            <div class="memory-card" style="border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color); background-color: var(--dark-card); transition: var(--transition-smooth);">
+              <div style="aspect-ratio: 16/10; overflow: hidden; background-color: var(--dark-bg);">
+                <img src="images/gallery_fans3.png" alt="High-Energy Crowds" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);">
+              </div>
+              <div style="padding: 16px; font-family: var(--font-heading); font-weight: 800; font-size: 0.9rem; text-transform: uppercase; color: var(--text-primary);">High-Energy Screening Crowds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: MATCHDAY / TURF GAMES ==================== -->
+    <section id="view-turf" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Play Like a Gunner</span>
+          <h2 class="section-title">Turf Games & Friendly matches</h2>
+        </div>
+        
+        <div class="turf-header-banner">
+          <div class="pitch-graphic"></div>
+          <h3 class="turf-banner-title">Arsenal Supporters Club Bengaluru Football Kickabouts</h3>
+          <p class="turf-banner-desc">
+            We host weekly amateur turf games across Bengaluru (HSR Layout, Kalyan Nagar, Indiranagar). Whether you want to showcase your skills or just play a friendly kickabout, register for our next session.
+          </p>
+        </div>
+        
+        <div id="turf-list-container" class="turf-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading turf fixtures...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: GALLERY ==================== -->
+    <section id="view-gallery" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">In Focus</span>
+          <h2 class="section-title">Photo Gallery</h2>
+        </div>
+        
+        <!-- Filters -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="screenings">Screenings</button>
+          <button class="filter-btn" data-filter="turf">Turf Games</button>
+          <button class="filter-btn" data-filter="fans">Passionate Fans</button>
+          <button class="filter-btn" data-filter="events">Special Events</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div id="gallery-grid-container" class="gallery-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading gallery items...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: ANNOUNCEMENTS ==================== -->
+    <section id="view-announcements" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Official Bulletins</span>
+          <h2 class="section-title">Announcements</h2>
+        </div>
+        
+        <div id="announcements-list-container" class="announcements-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading announcements...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: CHANTS ==================== -->
+    <section id="view-chants" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Raise Your Voice</span>
+          <h2 class="section-title">Arsenal Fan Chants</h2>
+        </div>
+        
+        <div id="chants-list-container" class="chants-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading chants...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: CORE MEMBERS ==================== -->
+    <section id="view-team" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Arsenal Supporters Club Bengaluru Leadership</span>
+          <h2 class="section-title">Core Members</h2>
+        </div>
+        
+        <div id="team-list-container" class="team-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);">Loading core members...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: CONTACT US (REDESIGNED) ==================== -->
+    <section id="view-contact" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+        
+        <!-- Interactive Two-Column Dashboard Contact -->
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h3 style="font-family: var(--font-heading); font-weight: 900; text-transform: uppercase;">Connect with the Bengaluru Red Army</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Have questions about match venue entry, membership registration, or turf games? Click any FAQ item below or send us a message using the form.
+            </p>
+            
+            <!-- Interactive FAQ Accordion -->
+            <div class="faq-accordion" style="margin: 25px 0 35px; display: flex; flex-direction: column; gap: 12px;">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>How do I attend a pub screening?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  Simply navigate to our Screenings tab, select an upcoming match, click 'RSVP Seat', and generate your digital Matchday Pass. Show this pass at the venue entrance.
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>Is there cover charge entry for pub screenings?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  Yes, screening venues in Bengaluru (like Church Street Social and Doffpub) usually collect a cover charge which can be fully redeemed on food and beverages inside.
+                </div>
+              </div>
+              
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>How do I play in the weekend turf matches?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  Register under our Match Day tab. We announce registrations every Monday. Slots are allocated on a first-come, first-served basis for verified members.
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-links" style="gap: 12px;">
+              <a href="#" class="contact-link-card">
+                <div class="contact-icon-box instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <h4>Instagram Handle</h4>
+                  <p>@ascbengaluru — Daily news & stories</p>
+                </div>
+              </a>
+              <a href="#" class="contact-link-card">
+                <div class="contact-icon-box whatsapp">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.197 1.45 4.817 1.45 5.548 0 10.063-4.515 10.066-10.066.002-2.69-1.042-5.221-2.937-7.117-1.894-1.895-4.426-2.937-7.124-2.939-5.55 0-10.068 4.519-10.07 10.074-.001 1.745.484 3.447 1.403 4.965l-.962 3.513 3.607-.946z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <h4>WhatsApp Channel</h4>
+                  <p>Broadcast alerts & matchday notifications</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <!-- styled contact form -->
+            <div class="contact-form-container">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully! Our coordinators will contact you soon.'); this.reset();">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name</label>
+                  <input class="form-input" type="text" id="contact-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address</label>
+                  <input class="form-input" type="email" id="contact-email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-msg">Your Message</label>
+                  <textarea class="form-input" id="contact-msg" placeholder="Tell us what you're looking for..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              </form>
+            </div>
+            
+            <!-- styled map graphic representing screening nodes -->
+            <div class="map-card" style="background-color: var(--dark-card); border: 1px solid var(--border-color); padding: 30px; border-radius: var(--border-radius); text-align: center; position: relative; overflow: hidden;">
+              <h4 style="font-family: var(--font-heading); font-weight: 800; text-transform: uppercase; font-size: 1rem; color: var(--accent-gold); margin-bottom: 15px;">Arsenal Supporters Club Bengaluru Screening Hubs</h4>
+              
+              <!-- Interactive Tooltip Overlay -->
+              <div class="map-tooltip" id="map-tooltip" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background: rgba(14, 15, 18, 0.95); border: 1px solid var(--accent-gold); padding: 8px 12px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; color: white; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.25s ease, transform 0.25s ease; z-index: 5; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                Hover over a hub point to view screening info
+              </div>
+              
+              <!-- Bengaluru Graphic Grid SVG -->
+              <svg viewBox="0 0 200 100" style="width: 100%; height: auto; max-height: 120px; filter: drop-shadow(0 0 8px rgba(239,1,7,0.25));" fill="none">
+                <!-- map outlines -->
+                <path d="M10 50 Q30 20 80 30 T120 70 T180 50" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+                <path d="M20 10 Q70 80 110 50 T190 90" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                
+                <!-- church street node -->
+                <g class="map-node" data-venue="Church Street Social" data-details="Featured Screening Hub • Church Street, MG Road" style="cursor: pointer;">
+                  <circle cx="80" cy="30" r="6" fill="#EF0107"/>
+                  <circle cx="80" cy="30" r="12" stroke="#EF0107" stroke-width="1.5" fill="none" style="animation: pulse 1.5s infinite; transform-origin: 80px 30px;"/>
+                  <text x="88" y="26" fill="white" font-family="var(--font-heading)" font-weight="800" font-size="8px">Church Street</text>
+                </g>
+                
+                <!-- indiranagar node -->
+                <g class="map-node" data-venue="Doffpub Indiranagar" data-details="Derby & Cup Screenings • 80 Feet Rd, Indiranagar" style="cursor: pointer;">
+                  <circle cx="120" cy="70" r="6" fill="#C59B27"/>
+                  <circle cx="120" cy="70" r="12" stroke="#C59B27" stroke-width="1.5" fill="none" style="animation: pulse 1.5s infinite; transform-origin: 120px 70px;"/>
+                  <text x="128" y="74" fill="white" font-family="var(--font-heading)" font-weight="800" font-size="8px">Indiranagar</text>
+                </g>
+              </svg>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 15px; font-weight: 500;">
+                Bangalore, Karnataka, India
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: ADMIN PANEL ==================== -->
+    <section id="view-admin" class="view-section">
+      <div class="container">
+        
+        <!-- Admin Password Form -->
+        <div id="admin-lock" class="admin-lock-screen">
+          <div class="admin-lock-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          </div>
+          <h3 class="admin-lock-title">Supporters Admin Area</h3>
+          <p class="admin-lock-desc">Enter the administrator password to unlock the club content publishing board.</p>
+          
+          <div id="admin-error" class="admin-error-msg">Incorrect Password. Try again.</div>
+          
+          <form id="adminLoginForm">
+            <div class="form-group">
+              <input class="form-input" type="password" id="adminPassword" placeholder="Enter Password" style="text-align: center; font-size: 1.1rem; letter-spacing: 0.1em;" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Unlock Dashboard</button>
+          </form>
+          
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 20px;">
+            Demo password is <code>gunners2026</code>
+          </p>
+        </div>
+        
+        <!-- Admin Dashboard Workspace -->
+        <div id="admin-dashboard" class="admin-dashboard">
+          <div class="admin-dash-header">
+            <h3 class="admin-dash-title">Arsenal Supporters Club Bengaluru Portal Dashboard <span>Content Manager</span></h3>
+            <div id="adminLogout" class="admin-logout-btn">Lock Board</div>
+          </div>
+          
+          <div class="admin-success-msg" id="admin-success">Successfully published to the supporters club portal!</div>
+          
+          <div class="admin-workspace">
+            <form id="adminPublishForm">
+              
+              <div class="admin-form-group">
+                <label class="form-label" for="pub-type">Content Type</label>
+                <select class="form-input" id="pub-type" style="background-color: var(--dark-bg);" required>
+                  <option value="" disabled selected>-- Select Type --</option>
+                  <option value="screening">Match Screening Card</option>
+                  <option value="announcement">Official Announcement</option>
+                  <option value="gallery">Photo Gallery Item</option>
+                </select>
+              </div>
+              
+              <div class="admin-form-group">
+                <label class="form-label" for="pub-title">Content Title</label>
+                <input class="form-input" type="text" id="pub-title" placeholder="e.g. Arsenal vs Chelsea Screening" required>
+                <div class="admin-form-help">Main title, matchup name, or announcement headline.</div>
+              </div>
+              
+              <div class="admin-form-group" id="group-description">
+                <label class="form-label" for="pub-desc">Caption / Details / Description</label>
+                <textarea class="form-input" id="pub-desc" placeholder="Provide detailed context for fans..."></textarea>
+              </div>
+              
+              <!-- Form Grid Row (Screening Specific Fields) -->
+              <div class="admin-row-grid" id="screening-only-fields" style="display: none;">
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-date">Date & Time</label>
+                  <input class="form-input" type="text" id="pub-date" placeholder="e.g. Saturday, 25 Oct at 10:00 PM IST">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-venue">Screening Venue</label>
+                  <input class="form-input" type="text" id="pub-venue" placeholder="e.g. Church Street Social, Bengaluru">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-rsvp">RSVP / Registration Link</label>
+                  <input class="form-input" type="text" id="pub-rsvp" placeholder="e.g. https://forms.gle/..." value="#">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-comp">Competition</label>
+                  <input class="form-input" type="text" id="pub-comp" placeholder="e.g. Premier League, Champions League">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-hometeam">Home Team</label>
+                  <input class="form-input" type="text" id="pub-hometeam" placeholder="e.g. ARSENAL">
+                </div>
+                <div class="admin-form-group">
+                  <label class="form-label" for="pub-awayteam">Away Team</label>
+                  <input class="form-input" type="text" id="pub-awayteam" placeholder="e.g. CHELSEA">
+                </div>
+              </div>
+              
+              <!-- Category Field (Gallery Specific Fields) -->
+              <div class="admin-form-group" id="gallery-only-fields" style="display: none;">
+                <label class="form-label" for="pub-category">Gallery Category</label>
+                <select class="form-input" id="pub-category" style="background-color: var(--dark-bg);">
+                  <option value="screenings">Screenings</option>
+                  <option value="turf">Turf Games</option>
+                  <option value="fans">Passionate Fans</option>
+                  <option value="events">Special Events</option>
+                </select>
+              </div>
+              
+              <!-- Announcement Specific Fields -->
+              <div class="admin-form-group" id="announcement-only-fields" style="display: none;">
+                <label class="form-label" for="pub-badge">Announcement Tag / Badge</label>
+                <input class="form-input" type="text" id="pub-badge" placeholder="e.g. Pinned, Event, Screening, News" value="News">
+              </div>
+              
+              <!-- Photo Upload Simulation -->
+              <div class="admin-form-group">
+                <label class="form-label">Upload Image / Graphic (Optional)</label>
+                <div style="border: 2px dashed var(--border-color); padding: 30px; text-align: center; border-radius: 6px; cursor: pointer; transition: var(--transition-smooth);" id="upload-zone" onclick="document.getElementById('pub-image').click();">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-gold)" style="margin-bottom: 10px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                  <p id="upload-text" style="font-size: 0.85rem; color: var(--text-secondary);">Click to simulate file upload</p>
+                  <input type="file" id="pub-image" style="display: none;" accept="image/*" onchange="window.handleImageUpload(event)">
+                  <input type="hidden" id="pub-image-url" value="">
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary admin-publish-btn">Publish to Website</button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#/home" class="logo" style="margin-bottom: 20px;">
+            <div class="logo-icon">
+              <svg viewBox="0 0 100 100" width="24" height="24" fill="#C59B27">
+                <path d="M75,55 C75,55 85,55 88,52 C91,49 91,47 88,44 C85,41 75,41 75,41 L70,43 L35,43 C33,40 30,38 26,38 C20,38 15,43 15,49 C15,55 20,60 26,60 C30,60 33,58 35,55 L70,55 Z" />
+              </svg>
+            </div>
+            <div class="logo-text">
+              ASCB
+              <span>Arsenal Supporters Club Bengaluru</span>
+            </div>
+          </a>
+          <p>The premium, official hub for Arsenal Football Club supporters living in Bengaluru, Karnataka. Screenings, events, chants, and football turf activities.</p>
+          <div class="footer-socials">
+            <a href="#" class="team-social-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg></a>
+            <a href="#" class="team-social-icon"><svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Navigate Portal</h4>
+          <ul class="footer-link-list">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/about">About Club</a></li>
+            <li><a href="#/join">Membership</a></li>
+            <li><a href="#/screenings">Match Screenings</a></li>
+            <li><a href="#/turf">Match Day & Turf</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Fan Culture</h4>
+          <ul class="footer-link-list">
+            <li><a href="#/chants">Arsenal Chants</a></li>
+            <li><a href="#/gallery">Photo Gallery</a></li>
+            <li><a href="#/announcements">Announcements</a></li>
+            <li><a href="#/team">Core Committee</a></li>
+            <li><a href="#/contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; width: 100%; border-top: 1px solid var(--border-color); padding-top: 30px; margin-top: 30px;">
+        <div class="footer-copy">
+          Arsenal Supporters Club Bengaluru (ASCB) © 2026. This is a client acquisition demo concept. All rights reserved. Spelled out in full as Arsenal Supporters Club Bengaluru.
+        </div>
+        <div class="footer-admin">
+          <a href="#/admin" style="font-size: 0.8rem; color: var(--text-muted); text-decoration: underline; transition: var(--transition-smooth);">Portal Administration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- INTERACTIVE TICKET RSVP MODAL --- -->
+  <div class="modal-overlay" id="rsvp-modal">
+    <div class="modal-card">
+      <div class="modal-close" id="modal-close-btn">&times;</div>
+      <div class="modal-header">
+        <h3 class="modal-title">Secure Your Seat</h3>
+        <p class="modal-subtitle">Matchday RSVP Pass</p>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <form id="ticketBookingForm">
+          <input type="hidden" id="booking-match-id" value="">
+          <div class="form-group">
+            <label class="form-label" for="booking-name">Full Name</label>
+            <input class="form-input" type="text" id="booking-name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="booking-email">Email Address</label>
+            <input class="form-input" type="email" id="booking-email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="booking-jersey">Select Supporter Kit (Optional Drop)</label>
+            <select class="form-input" id="booking-jersey" style="background-color: var(--dark-bg);">
+              <option value="none">Entry Ticket Only</option>
+              <option value="red-scarf">ASCB Members Red Scarf (+ ₹299)</option>
+              <option value="tee-s">Official Supporter Tee [S] (+ ₹499)</option>
+              <option value="tee-m">Official Supporter Tee [M] (+ ₹499)</option>
+              <option value="tee-l">Official Supporter Tee [L] (+ ₹499)</option>
+              <option value="tee-xl">Official Supporter Tee [XL] (+ ₹499)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Confirm RSVP & Get Pass</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
