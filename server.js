@@ -40,6 +40,18 @@ const MIME = {
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0];
 
+  // Strip repository subfolder prefixes if present (e.g. /Arsenal- or /Arsenal)
+  const repoPrefixes = ['/Arsenal-', '/Arsenal'];
+  for (const prefix of repoPrefixes) {
+    if (urlPath.startsWith(prefix + '/')) {
+      urlPath = urlPath.slice(prefix.length);
+      break;
+    } else if (urlPath === prefix) {
+      urlPath = '/';
+      break;
+    }
+  }
+
   // Intercept API routes for local development
   if (urlPath === '/api/data') {
     res.setHeader('Access-Control-Allow-Origin', '*');
