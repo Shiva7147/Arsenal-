@@ -16,7 +16,7 @@ const INITIAL_MOCK_DATA = {
       "venue": "Church Street Social, Bengaluru",
       "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
       "instaLink": "https://www.instagram.com/ascbengaluru",
-      "posterUrl": ""
+      "posterUrl": "images/gallery_screening.png"
     },
     "list": [
       {
@@ -28,7 +28,7 @@ const INITIAL_MOCK_DATA = {
         "venue": "Church Street Social, Bengaluru",
         "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
         "instaLink": "https://www.instagram.com/ascbengaluru",
-        "posterUrl": ""
+        "posterUrl": "images/gallery_screening.png"
       },
       {
         "id": "scr-2",
@@ -39,7 +39,7 @@ const INITIAL_MOCK_DATA = {
         "venue": "Doffpub, Indiranagar, Bengaluru",
         "rsvpLink": "https://forms.gle/ascb-rsvp-placeholder",
         "instaLink": "https://www.instagram.com/ascbengaluru",
-        "posterUrl": ""
+        "posterUrl": "images/gallery_fans3.png"
       }
     ]
   },
@@ -234,7 +234,30 @@ const modalBodyContent = document.getElementById('modal-body-content');
 
 // --- 1. ROUTING SYSTEM (SPA) ---
 function handleRouting() {
-  let hash = window.location.hash || '#/home';
+  let hash = window.location.hash;
+
+  // Support path-based URLs (bridging direct path visits/reloads to hash routing)
+  if (!hash && window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+    let pathName = window.location.pathname;
+    const repoPrefixes = ['/Arsenal-', '/Arsenal'];
+    for (const prefix of repoPrefixes) {
+      if (pathName.startsWith(prefix + '/')) {
+        pathName = pathName.slice(prefix.length);
+        break;
+      } else if (pathName === prefix) {
+        pathName = '/';
+        break;
+      }
+    }
+    
+    if (pathName !== '/' && pathName !== '/index.html') {
+      const pathRoute = pathName.replace(/^\/+/, '');
+      window.location.hash = '#/' + pathRoute;
+      return; // hashchange event will trigger handleRouting again
+    }
+  }
+
+  hash = hash || '#/home';
   let viewId = hash.replace('#/', 'view-');
 
   // Safety fallback for incorrect route
@@ -328,31 +351,63 @@ function closeMobileMenu() {
 
 // --- 3. RESILIENT DATA SYNCHRONIZATION ENGINE ---
 async function initDataEngine() {
+  const hasLocalEdits = localStorage.getItem('ascb_has_local_edits') === 'true';
+  const localStore = localStorage.getItem('ascb_data');
+
+  if (hasLocalEdits && localStore) {
+    try {
+      appData = JSON.parse(localStore);
+      console.log('Database sync: Loaded from local browser storage due to local edits.');
+      renderAppViews();
+      return;
+    } catch (e) {
+      console.error('Failed to parse LocalStorage data with edits. Resetting edits flag.');
+      localStorage.removeItem('ascb_has_local_edits');
+    }
+  }
+
   try {
+    // 1. Try to fetch from local dev server API
     const response = await fetch('/api/data');
     if (response.ok) {
       appData = await response.json();
       console.log('Database sync: Loaded from server successfully!');
+      renderAppViews();
+      return;
     } else {
       throw new Error('Server data returned error code');
     }
   } catch (error) {
-    console.warn('Database sync: Local dev server unavailable. Falling back to client-side storage.');
-    
-    const localStore = localStorage.getItem('ascb_data');
-    if (localStore) {
-      try {
-        appData = JSON.parse(localStore);
-        console.log('Database sync: Loaded from browser LocalStorage.');
-      } catch (e) {
-        console.error('Failed to parse LocalStorage data. Resetting to mock baseline.');
+    console.warn('Database sync: Local dev server unavailable. Trying static data.json...');
+    try {
+      // 2. Try to fetch static data.json from server directly
+      const response = await fetch('data.json');
+      if (response.ok) {
+        appData = await response.json();
+        console.log('Database sync: Loaded from static data.json successfully!');
+        renderAppViews();
+        return;
+      } else {
+        throw new Error('Static data.json returned error code');
+      }
+    } catch (staticError) {
+      console.warn('Database sync: Static data.json load failed. Falling back to local storage...', staticError);
+      
+      // 3. Fallback to local storage (offline or failed network)
+      if (localStore) {
+        try {
+          appData = JSON.parse(localStore);
+          console.log('Database sync: Loaded from browser LocalStorage.');
+        } catch (e) {
+          console.error('Failed to parse LocalStorage data. Resetting to mock baseline.');
+          appData = JSON.parse(JSON.stringify(INITIAL_MOCK_DATA));
+          localStorage.setItem('ascb_data', JSON.stringify(appData));
+        }
+      } else {
+        console.log('Database sync: First-time load. Initializing baseline database.');
         appData = JSON.parse(JSON.stringify(INITIAL_MOCK_DATA));
         localStorage.setItem('ascb_data', JSON.stringify(appData));
       }
-    } else {
-      console.log('Database sync: First-time load. Initializing baseline database.');
-      appData = JSON.parse(JSON.stringify(INITIAL_MOCK_DATA));
-      localStorage.setItem('ascb_data', JSON.stringify(appData));
     }
   }
 
@@ -378,13 +433,16 @@ async function saveAppData(updatedData) {
     
     if (response.ok) {
       console.log('Database sync: Saved changes to server.');
+      localStorage.removeItem('ascb_has_local_edits'); // clear local edits flag since server has them now
       return true;
     } else {
       console.warn('Database sync: Post rejected by server. Saved locally.');
+      localStorage.setItem('ascb_has_local_edits', 'true'); // set local edits flag
       return false;
     }
   } catch (error) {
     console.warn('Database sync: Server connection offline. Saved locally.');
+    localStorage.setItem('ascb_has_local_edits', 'true'); // set local edits flag
     return false;
   }
 }
