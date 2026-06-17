@@ -1,5 +1,27 @@
 {
   "cleanUrls": true,
+  "builds": [
+    {
+      "src": "images/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "style.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "data.json",
+      "use": "@vercel/static"
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!api/).*)",
